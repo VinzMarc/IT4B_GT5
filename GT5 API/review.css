@@ -1,0 +1,28 @@
+.review-page { max-width: 1180px; margin: 0 auto; padding: 48px 28px 72px; }
+.review-header { max-width: 760px; margin-bottom: 30px; }
+.review-header h1 { margin: 0; color: var(--ink); font: 700 clamp(2.2rem, 4vw, 3.4rem)/1.04 "Space Grotesk", sans-serif; letter-spacing: -0.065em; }
+.review-header .intro { margin-top: 14px; line-height: 1.65; }
+.review-layout { display: grid; grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr); align-items: start; gap: 22px; }
+.review-form { position: static; }
+.review-form h2, .review-placeholder h2, .review-card h2 { margin: 0; color: var(--ink); font: 700 1.4rem/1.2 "Space Grotesk", sans-serif; letter-spacing: -0.04em; }
+.review-form .form-field textarea { width: 100%; min-height: 190px; line-height: 1.55; }
+.review-field-meta { display: grid; gap: 8px; margin-top: 8px; color: var(--muted); font-size: 0.72rem; }
+.review-field-meta .auth-error { font-size: 0.76rem; }
+.review-results { min-width: 0; }
+.review-placeholder { min-height: 190px; }
+.review-placeholder .form-note { margin-bottom: 0; }
+.review-card { padding: 26px; }
+.review-card__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.review-rating { flex: 0 0 auto; padding: 7px 10px; border-radius: 999px; background: #e6f3e8; color: var(--mint-strong); font-size: 0.72rem; font-weight: 800; }
+.review-rating--needs-work { background: #fff0eb; color: #b54d39; }
+.review-rating--developing { background: #fff5d9; color: #8d6b13; }
+.review-summary { margin: 20px 0; color: var(--ink); line-height: 1.65; }
+.review-section { padding-top: 18px; border-top: 1px solid var(--line); }
+.review-section + .review-section { margin-top: 18px; }
+.review-section h3 { margin: 0; color: var(--ink); font: 700 1rem/1.3 "Space Grotesk", sans-serif; }
+.review-section ul { display: grid; gap: 10px; margin: 12px 0 0; padding-left: 20px; color: var(--muted); line-height: 1.55; }
+.review-section li::marker { color: var(--mint-strong); }
+html.dark .review-rating--needs-work { background: rgba(181, 77, 57, 0.2); }
+html.dark .review-rating--developing { background: rgba(141, 107, 19, 0.22); color: #f0cf72; }
+@media (max-width: 840px) { .review-layout { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .review-page { padding: 34px 18px 52px; } .review-card { padding: 20px; } .review-card__heading { display: block; } .review-rating { display: inline-block; margin-top: 12px; } }
